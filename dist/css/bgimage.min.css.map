@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACL,KAAK,CAAC,IAAI,CACV,MAAM,CAAC,KAAK,CACZ,gBAAgB,CAAE,wCAAwC,CAC1D,OAAO,CAAE,IAAI,CAChB",
+    "sources": [
+        "../../scss/layout/bgimage.scss"
+    ],
+    "names": [],
+    "file": "bgimage.min.css"
+}
