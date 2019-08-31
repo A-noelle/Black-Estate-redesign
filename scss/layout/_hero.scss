@@ -1,17 +1,17 @@
 .hero {
-    width:100%;
+    //sizing
+    width:100vw;
     height: 100vh;
+
+    //backgound styles
     background-image: url('../../img/BlackEstate_homeimg.jpg');
     opacity: 0.8;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-}
 
-.hero-inner {
-    background-image: url('../../img/BlackEstateLogo.png');
-    display: block;
+    //flexbox
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
