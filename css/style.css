@@ -6,10 +6,6 @@
   height: 150px;
   background-image: url("../../img/Nav.png");
   background-repeat: no-repeat;
-  background-position: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .navbar-nav {
@@ -68,14 +64,30 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
+}
+
+.hero-inner {
+  background-image: url("../../img/BlackEstateLogo.png");
+  display: block;
 }
 
 .bodycopy {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  vertical-align: top;
 }
 
 .blockquote {
@@ -99,38 +111,46 @@ a:hover {
   color: #77574E;
 }
 
-.row1 {
+.gap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #e5e6dd;
+  margin: 0;
+  height: 150px;
+  width: 100%;
+}
+
+.row1 {
   height: 950px;
   width: 100%;
   margin: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .row2 {
-  height: 655px;
+  height: 700px;
   width: 100%;
   margin: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #e5e6dd;
 }
 
 .row3 {
-  background-color: #e5e6dd;
   height: 900px;
   width: 100%;
   margin: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -150,8 +170,6 @@ a:hover {
   padding-right: 100px;
   background-color: #ffffff;
   height: 800px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .content-2 {
@@ -165,8 +183,9 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 655px;
+  height: 700px;
   padding-left: 50px;
+  padding-right: 100px;
 }
 
 .content-3 {
@@ -184,32 +203,38 @@ a:hover {
   padding-right: 120px;
   background-color: #ffffff;
   height: 750px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
 .image-1 {
   background-image: url("../../img/Img1.jpg");
   background-size: cover;
   height: 800px;
-  width: 100%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .image-2 {
   background-image: url("../../img/Img2.jpg");
   background-size: cover;
-  height: 655px;
-  width: 100%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .image-3 {
   background-image: url("../../img/Img3.jpeg");
   background-size: cover;
   height: 750px;
-  width: 100%;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */
