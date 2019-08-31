@@ -31,7 +31,7 @@
 }
 
 a:hover {
-    color: $link-color;
+    color: #6B7245;
     font-family: 'Lato', sans-serif;
     letter-spacing: 3px;
 }
@@ -49,12 +49,3 @@ a:hover {
     display:inline-block;
     float: none;
 }
-
-// Variables
-
-$fontprimary: #0B1422;
-$fontparagraph: #77574E;
-$link-color: #6B7245;
-
-$bg-color: #6B7245;
-$bgcolor: rgba($bg-color, 0.2);
