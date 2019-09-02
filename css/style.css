@@ -45,30 +45,16 @@
   text-align: center;
 }
 
-a:hover {
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus,
+.nav-link.active {
   color: #6B7245;
   font-family: 'Lato', sans-serif;
   letter-spacing: 2.5px;
   font-size: 17px;
+  font-weight: bold;
   text-align: center;
-}
-
-.fas .fa-shopping-cart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
-}
-
-.navbar.center .navbar-inner {
-  text-align: center;
-}
-
-.navbar.center .navbar-inner .nav {
-  display: inline-block;
-  float: none;
 }
 
 .fas.fa-shopping-cart {
@@ -77,7 +63,7 @@ a:hover {
   display: flex;
   position: absolute;
   right: 2%;
-  top: 22%;
+  top: 15%;
   padding: 20px;
 }
 
@@ -87,6 +73,7 @@ a:hover {
   display: flex;
   position: absolute;
   top: 25%;
+  color: #6B7245;
 }
 
 .hero {
@@ -145,7 +132,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #e5e6dd;
+  background-color: #e5e6dda1;
   margin: 0;
   height: 150px;
   width: 100%;
@@ -171,7 +158,7 @@ a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #e5e6dd;
+  background-color: #e5e6dda1;
 }
 
 .row3 {
@@ -239,7 +226,6 @@ a:hover {
   background-image: url("../../img/Img1.jpg");
   background-size: cover;
   height: 800px;
-  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,7 +237,6 @@ a:hover {
   background-image: url("../../img/Img2.jpg");
   background-size: cover;
   height: 700px;
-  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,11 +248,133 @@ a:hover {
   background-image: url("../../img/Img3.jpeg");
   background-size: cover;
   height: 750px;
-  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.btn-outline {
+  color: #6B7245;
+  background-color: #ffffff;
+  border-color: #6B7245;
+  letter-spacing: 2.5px;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus,
+.btn-outline.active {
+  background: #6B7245;
+  color: #ffffff;
+  border-color: #6B7245;
+}
+
+.page-footer {
+  color: #77574E;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer-row {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer-nav {
+  padding-left: 30px;
+}
+
+.footer-item {
+  padding: 3px;
+}
+
+.footer-link {
+  font-size: 16px;
+  color: #77574E;
+  letter-spacing: 2.5px;
+}
+
+.footer-link:hover,
+.footer-link:active,
+.footer-link:focus {
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  color: #77574E;
+}
+
+.col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.visit-style {
+  letter-spacing: 2.5px;
+}
+
+.visit-us {
+  font-weight: bold;
+}
+
+.visit-us-content {
+  padding-top: 5px;
+  line-height: 30px;
+}
+
+.col3 {
+  padding-right: 40px;
+}
+
+.form-header {
+  font-weight: bold;
+  color: #6B7245;
+  letter-spacing: 2.5px;
+}
+
+.form-content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.form-icon {
+  background-color: #B95616;
+  display: inline-block;
+  padding-right: 10px;
+  padding-top: 2px;
+  justify-self: baseline;
+  border: #B95616;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.footer-form {
+  height: 50px;
+  border-radius: 0;
+}
+
+.fa-paper-plane {
+  color: #ffffff;
+  padding: 7px;
+}
+
+.col4 {
+  padding-right: 30px;
+}
+
+.fab {
+  color: #6B7245;
+  padding: 5px;
+}
+
+.logofooter {
+  background-image: url("../../img/BlackEstateLogo.png");
+  background-size: cover;
+  height: 30px;
 }
 /*# sourceMappingURL=style.css.map */

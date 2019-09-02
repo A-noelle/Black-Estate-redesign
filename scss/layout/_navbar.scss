@@ -36,26 +36,16 @@
     text-align: center;
 }
 
-a:hover {
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus,
+.nav-link.active {
     color: #6B7245;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2.5px;
     font-size: 17px;
+    font-weight: bold;
     text-align: center; 
-}
-
-.fas .fa-shopping-cart {
-    display: flex;
-    align-items: right;
-}
-
-.navbar.center .navbar-inner {
-    text-align: center;
-}
-
-.navbar.center .navbar-inner .nav {
-    display:inline-block;
-    float: none;
 }
 
 //Icon
@@ -64,7 +54,7 @@ a:hover {
     display: flex;
     position: absolute;
     right: 2%;
-    top: 22%;
+    top: 15%;
     padding: 20px;
 }
 
@@ -72,4 +62,5 @@ a:hover {
     display: flex;
     position: absolute;
     top: 25%;
+    color: #6B7245;
 }

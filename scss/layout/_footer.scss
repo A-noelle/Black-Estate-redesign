@@ -1,0 +1,108 @@
+.page-footer {
+    color: #77574E;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-row {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+// Footer Nav
+
+.footer-nav {
+    padding-left: 30px;
+}
+
+.footer-item {
+    padding: 3px;
+}
+
+.footer-link {
+    font-size: 16px;
+    color: #77574E;
+    letter-spacing: 2.5px;
+}
+
+.footer-link:hover,
+.footer-link:active,
+.footer-link:focus {
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    color: #77574E;
+}
+
+// Visit Us
+
+.col2 {
+    display: flex;
+    justify-content: center;
+}
+
+.visit-style {
+    letter-spacing: 2.5px;
+}
+
+.visit-us {
+    font-weight: bold;
+}
+
+.visit-us-content {
+    padding-top: 5px;
+    line-height: 30px;
+}
+
+// Form
+
+.col3 {
+    padding-right: 40px;
+}
+
+.form-header {
+    font-weight: bold;
+    color: #6B7245;
+    letter-spacing: 2.5px;
+}
+
+.form-content {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.form-icon {
+    background-color: #B95616;
+    display: inline-block;
+    padding-right: 10px;
+    padding-top: 2px;
+    justify-self: baseline;
+    border: #B95616;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.footer-form {
+    height: 50px;
+    border-radius: 0;
+}
+
+.fa-paper-plane {
+    color: #ffffff;
+    padding: 7px;
+}
+
+// Socail Media
+
+.col4 {
+    padding-right: 30px;
+}
+
+.fab {
+    color: #6B7245;
+    padding: 5px;
+}
+
+.logofooter {
+    background-image: url('../../img/BlackEstateLogo.png');
+    background-size: cover;
+    height: 30px;
+}
