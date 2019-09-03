@@ -1,43 +1,37 @@
 .page-footer {
     color: #77574E;
     font-family: 'Lato', sans-serif;
+    position: static;
 }
 
 .footer-row {
     padding-left: 30px;
     padding-right: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 // Footer Nav
-
-.footer-nav {
-    padding-left: 30px;
-}
 
 .footer-item {
     padding: 3px;
 }
 
-.footer-link {
+.footer-nav-link {
     font-size: 16px;
     color: #77574E;
     letter-spacing: 2.5px;
 }
 
-.footer-link:hover,
-.footer-link:active,
-.footer-link:focus {
+.footer-nav-link:hover,
+.footer-nav-link:active,
+.footer-nav-link:focus {
     font-weight: bold;
     letter-spacing: 2.5px;
     color: #77574E;
 }
 
 // Visit Us
-
-.col2 {
-    display: flex;
-    justify-content: center;
-}
 
 .visit-style {
     letter-spacing: 2.5px;
@@ -53,10 +47,6 @@
 }
 
 // Form
-
-.col3 {
-    padding-right: 40px;
-}
 
 .form-header {
     font-weight: bold;
@@ -93,16 +83,51 @@
 // Socail Media
 
 .col4 {
-    padding-right: 30px;
-}
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    padding-left: 20px;
 
-.fab {
-    color: #6B7245;
-    padding: 5px;
-}
+    .fab {
+        display: inline-flex;
+        color: #6B7245;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
 
-.logofooter {
-    background-image: url('../../img/BlackEstateLogo.png');
-    background-size: cover;
-    height: 30px;
-}
+    .logofooter {
+        background: url('../../img/BlackEstateLogo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-link-contain {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    a.footer-link {
+        font-size: 10px;
+        padding-bottom: 5px;
+        color: #77574E;
+
+        &:hover,
+        &:active,
+        &:focus {
+            font-weight: bold;
+            color: #77574E;
+        }
+    }
+
+    .copyright {
+        font-size: 10px;
+        font-style: italic;
+    }
+
+}  

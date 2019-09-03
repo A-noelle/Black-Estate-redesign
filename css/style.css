@@ -65,6 +65,7 @@
   right: 2%;
   top: 15%;
   padding: 20px;
+  color: #6B7245;
 }
 
 .fas.fa-bars {
@@ -276,42 +277,36 @@
 .page-footer {
   color: #77574E;
   font-family: 'Lato', sans-serif;
+  position: static;
 }
 
 .footer-row {
   padding-left: 30px;
   padding-right: 30px;
-}
-
-.footer-nav {
-  padding-left: 30px;
-}
-
-.footer-item {
-  padding: 3px;
-}
-
-.footer-link {
-  font-size: 16px;
-  color: #77574E;
-  letter-spacing: 2.5px;
-}
-
-.footer-link:hover,
-.footer-link:active,
-.footer-link:focus {
-  font-weight: bold;
-  letter-spacing: 2.5px;
-  color: #77574E;
-}
-
-.col2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer-item {
+  padding: 3px;
+}
+
+.footer-nav-link {
+  font-size: 16px;
+  color: #77574E;
+  letter-spacing: 2.5px;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:active,
+.footer-nav-link:focus {
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  color: #77574E;
 }
 
 .visit-style {
@@ -325,10 +320,6 @@
 .visit-us-content {
   padding-top: 5px;
   line-height: 30px;
-}
-
-.col3 {
-  padding-right: 40px;
 }
 
 .form-header {
@@ -364,17 +355,65 @@
 }
 
 .col4 {
-  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
 }
 
-.fab {
+.col4 .fab {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: #6B7245;
-  padding: 5px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
-.logofooter {
-  background-image: url("../../img/BlackEstateLogo.png");
-  background-size: cover;
-  height: 30px;
+.col4 .logofooter {
+  background: url("../../img/BlackEstateLogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col4 .footer-link-contain {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.col4 a.footer-link {
+  font-size: 10px;
+  padding-bottom: 5px;
+  color: #77574E;
+}
+
+.col4 a.footer-link:hover, .col4 a.footer-link:active, .col4 a.footer-link:focus {
+  font-weight: bold;
+  color: #77574E;
+}
+
+.col4 .copyright {
+  font-size: 10px;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
