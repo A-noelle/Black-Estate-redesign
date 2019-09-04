@@ -15,59 +15,67 @@
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <!-- SASS -->
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
 <body>
 
-<!-- Navigation -->
+<!-- Hero -->
 <section class="hero">
-  <div class="hero-inner"></div>
+    <div class="hero-inner fade-in">
+      <div class="hero-logo"></div>
+    </div>
 </section>
 
     <!-- Nav -->
-
     <nav class="navbar navbar-expand-lg fixed-top" role="navigation">
-            <div class="container-fluid">
-              <button class="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-              </button>
-              <div class="navcontainer collapse navbar-collapse" id="navbarResponsive">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        </div>
+        <div class="navcontainer collapse navbar-collapse" id="navbarResponsive">
+
+          <!-- Nav links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Vineyards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Wines</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Accomodation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">The Club</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Restaurant</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <i class="fas fa-shopping-cart"></i>
+    </nav>
     
-                <!-- Nav links -->
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">Vineyards</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">Wines</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">Accomodation</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">The Club</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">Restaurant</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <i class="fas fa-shopping-cart"></i>
-          </nav>
 
     <!-- Containers  -->
-    <div class="rowcontent">
 
-    <div class="bodycopy container-fluid">
-        <div class="row1">
-            <div class="gap"></div>
-            <div class="content-1 col-md-5">
+    <div class="bodycopy">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="c1 gap"></div>
+
+            <div class="c2 col-12 col-md-5">
                 <p class="blockquote">
                 With three organic hillside vineyards on 
                 clay limestone soils in  North Canterbury, 
@@ -80,17 +88,14 @@
                 good fight.
                 </p>
                 <br>
-                <p><a href="#" class="btn btn-outline">Explore Our Vineyards</a></p>
+                <p><a href="#" class="btn btn-outline fade-in-left">Explore Our Vineyards</a></p>
             </div>
-            <div class="image-1 col-md-7">
-            </div>
-        </div>
-    </div>
-    
-      <div class="bodycopy container-fluid">
-        <div class="row2">
-            <div class="image-2 col-md-5"></div>
-            <div class="content-2 col-md-7">
+
+            <div class="c3 col-12 col-md-7"></div>
+
+            <div class="c4 col-12 col-md-5"></div>
+
+            <div class="c5 col-12 col-md-7">
               <p class="blockquote">
                 Our aim is to grow high quality grapes, and use
                 simple and natural wine making to make real,
@@ -102,14 +107,10 @@
                 derived  yeasts, no additives or fining, minimal sulphur at bottling and where
                 possible, no filtration. Then we have character. 
               </p><br>
-              <p><a href="#" class="btn btn-outline">Our Wines</a></p>
+              <p><a href="#" class="btn btn-outline fade-in-left">Our Wines</a></p>
             </div>
-        </div>
-      </div>
 
-      <div class="bodycopy container-fluid">
-        <div class="row3">
-            <div class="content-3 col-md-5">
+            <div class="c6 col-12 col-md-5">
               <p class="blockquote">Full of personality…</p><br>
               <p class="story">
                 The season’s fruit has been picked, fermented and is now 
@@ -118,14 +119,16 @@
                 smaller than usual yield due to poor flowering. The quality of 
                 the havest is exciting.  Now we and our wine rest…until pruning 
                 in June and the wines stirring in spring.</p><br>
-              <p><a href="#" class="btn btn-outline">Current Releases</a></p>
+              <p><a href="#" class="btn btn-outline fade-in-left">Current Releases</a></p>
             </div> 
-            <div class="image-3 col-md-7"></div>
-            <div class="gap"></div>
-        </div>
-      </div>
 
-      </div>
+            <div class="c7 col-12 col-md-7"></div>
+            
+            <div class="c8 gap"></div>
+
+            </div>
+          </div> 
+    </div>
 
     <!-- Footer -->
     <footer class="page-footer">
@@ -189,14 +192,12 @@
               Subscribe to our monthly newsletter
               for all the latest updates!
               </p>
-                <div class="footer-input input-group input-group-lg">
-                    <div class="footer-input-group input-group addon">
-                      <input class="footer-form form-control" type="text" placeholder="Email address">
-                      <span class="form-icon input-group-addon">
-                        <i class="fas fa-paper-plane fa-2x"></i>
-                      </span>
-                    </div>
-                  </div>  
+                <div class="footer-input input-group input-group-sm addon">
+                    <input class="footer-form form-control" type="text" placeholder="Email address">
+                    <span class="form-icon input-group-addon">
+                      <i class="fas fa-paper-plane fa-lg"></i>
+                    </span>
+                </div>  
             </div>
       
             <!-- Grid column -->

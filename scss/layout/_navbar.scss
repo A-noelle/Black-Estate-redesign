@@ -34,18 +34,18 @@
     font-size: 16px;
     letter-spacing: 2.5px;
     text-align: center;
-}
 
-.nav-link:hover,
-.nav-link:active,
-.nav-link:focus,
-.nav-link.active {
-    color: #6B7245;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 2.5px;
-    font-size: 17px;
-    font-weight: bold;
-    text-align: center; 
+        &:hover,
+        &:active,
+        &:focus,
+        &.active {
+            color: #6B7245;
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 2.5px;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center; 
+    }
 }
 
 //Icon
@@ -56,12 +56,29 @@
     right: 2%;
     top: 15%;
     padding: 20px;
-    color: #6B7245;
+    color: #0B1422;
+    
+    &:hover,
+    &:active,
+    &:focus,
+    &.active {
+        color: #6B7245;
+    }
 }
 
 .fas.fa-bars {
     display: flex;
     position: absolute;
     top: 25%;
-    color: #6B7245;
+    color: #0B1422;
+    z-index: 1;
 }
+
+@media screen and (max-width:990px){
+    .navbar-nav {
+        text-align: center;
+        background-color: #fff;
+        width: 100vw;
+        padding-bottom: 10px;
+    }
+}  

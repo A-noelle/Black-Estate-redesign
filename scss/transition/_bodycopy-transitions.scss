@@ -1,0 +1,14 @@
+// Bodycopy
+
+.fade-in-left {
+    animation: fadeInLeft ease 7s;
+  }
+  
+    @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
