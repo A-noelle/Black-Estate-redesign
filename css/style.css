@@ -1,3 +1,14 @@
+.navbar-logo {
+  background: url("../../img/BlackEstateLogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 100px;
+  position: absolute;
+  left: 2%;
+  top: 25%;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +54,7 @@
   font-size: 16px;
   letter-spacing: 2.5px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .nav-link:hover, .nav-link:active, .nav-link:focus, .nav-link.active {
@@ -55,9 +67,6 @@
 }
 
 .fas.fa-shopping-cart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: absolute;
   right: 2%;
   top: 15%;
@@ -85,6 +94,16 @@
     background-color: #fff;
     width: 100vw;
     padding-bottom: 10px;
+  }
+  .navbar-logo {
+    background: url("../../img/BlackEstateLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    left: 45%;
+    top: 25%;
   }
 }
 
@@ -128,7 +147,7 @@
   }
 }
 
-.bodycopy {
+.ourstory {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -138,15 +157,15 @@
       flex-wrap: row wrap;
 }
 
-.bodycopy .c2, .bodycopy .c3 {
+.ourstory .story-vineyards, .ourstory .story-vineyards-image {
   min-height: 600px;
 }
 
-.bodycopy .c4, .bodycopy .c5 {
+.ourstory .story-wines-image, .ourstory .story-wines {
   min-height: 500px;
 }
 
-.bodycopy .c6, .bodycopy .c7 {
+.ourstory .story-current, .ourstory .story-current-image {
   min-height: 550px;
 }
 
@@ -161,7 +180,7 @@
   color: #77574E;
 }
 
-.story {
+.content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +190,7 @@
   color: #77574E;
 }
 
-.c1.gap, .c8.gap {
+.gap-top, .gap-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,7 +200,7 @@
   width: 100%;
 }
 
-.c2, .c5, .c6 {
+.story-vineyards, .story-wines, .story-current {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,33 +214,33 @@
   padding-left: 50px;
 }
 
-.c2 {
+.story-vineyards {
   padding-right: 100px;
   background-color: #ffffff;
 }
 
-.c5 {
+.story-wines {
   padding-left: 50px;
   padding-right: 100px;
 }
 
-.c6 {
+.story-current {
   padding-left: 50px;
   padding-right: 120px;
   background-color: #ffffff;
 }
 
-.c3 {
+.story-vineyards-image {
   background-image: url("../../img/Img1.jpg");
   background-size: cover;
 }
 
-.c4 {
+.story-wines-image {
   background-image: url("../../img/Img2.jpg");
   background-size: cover;
 }
 
-.c7 {
+.story-current-image {
   background-image: url("../../img/Img3.jpeg");
   background-size: cover;
 }
@@ -235,47 +254,44 @@
   text-transform: uppercase;
 }
 
-.btn-outline:hover,
-.btn-outline:active,
-.btn-outline:focus,
-.btn-outline.active {
+.btn-outline:hover, .btn-outline:active, .btn-outline:focus, .btn-outline.active {
   background: #6B7245;
   color: #ffffff;
   border-color: #6B7245;
 }
 
 @media screen and (max-width: 770px) {
-  .c2 {
+  .story-vineyards {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .c3 {
+  .story-vineyards-image {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .c4 {
+  .story-wines-image {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
   }
-  .c5 {
+  .story-wines {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
-  .c6 {
+  .story-current {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
   }
-  .c7 {
+  .story-current-image {
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
             order: 6;
   }
-  .c8 {
+  .gap-bottom {
     -webkit-box-ordinal-group: 8;
         -ms-flex-order: 7;
             order: 7;
@@ -288,7 +304,7 @@
   position: static;
 }
 
-.footer-row {
+.page-footer .footer-row {
   padding-left: 30px;
   padding-right: 30px;
   display: -webkit-box;
@@ -299,71 +315,70 @@
           justify-content: center;
 }
 
-.col1 .footer-item {
+.footer-nav .footer-item {
   padding: 3px;
 }
 
-.col1 .footer-nav-link {
+.footer-nav .footer-nav-link {
   font-size: 16px;
   color: #77574E;
   letter-spacing: 2.5px;
+  text-transform: uppercase;
 }
 
-.col1 .footer-nav-link:hover,
-.col1 .footer-nav-link:active,
-.col1 .footer-nav-link:focus {
+.footer-nav .footer-nav-link:hover, .footer-nav .footer-nav-link:active, .footer-nav .footer-nav-link:focus {
   font-weight: bold;
   letter-spacing: 2.5px;
   color: #77574E;
 }
 
-.col2 .visit-style {
+.visit-us .visit-style {
   letter-spacing: 2.5px;
+  text-transform: uppercase;
 }
 
-.col2 .visit-us {
+.visit-us .visit-style h6 {
   font-weight: bold;
 }
 
-.col2 .visit-us-content {
+.visit-us .visit-style p {
   padding-top: 5px;
   line-height: 30px;
 }
 
-.col3 .form-header {
+.footerform h6 {
   font-weight: bold;
   color: #6B7245;
   letter-spacing: 2.5px;
 }
 
-.col3 .form-content {
+.footerform p {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-.col3 .footer-input {
+.footerform .footer-input {
   height: 25px;
   max-width: 225px;
   border-radius: 0;
 }
 
-.col3 .form-icon {
+.footerform .form-icon {
   background-color: #B95616;
   display: inline-block;
   padding-right: 10px;
   padding-left: 4px;
   padding-top: 5px;
   justify-self: baseline;
-  border: #B95616;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
 
-.col3 .fa-paper-plane {
+.footerform .fa-paper-plane {
   color: #ffffff;
 }
 
-.col4 {
+.socialmedia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,13 +390,13 @@
   padding-left: 20px;
 }
 
-.col4 .fab {
+.socialmedia i {
   color: #6B7245;
   padding-right: 10px;
   padding-bottom: 10px;
 }
 
-.col4 .logofooter {
+.socialmedia .logofooter {
   background: url("../../img/BlackEstateLogo.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -390,7 +405,7 @@
   margin-top: 20px;
 }
 
-.col4 .footer-link-contain {
+.socialmedia .footer-link-contain {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,20 +416,88 @@
           flex-direction: column;
 }
 
-.col4 a.footer-link {
+.socialmedia .footer-link {
   font-size: 10px;
   padding-bottom: 5px;
   color: #77574E;
 }
 
-.col4 a.footer-link:hover, .col4 a.footer-link:active, .col4 a.footer-link:focus {
+.socialmedia .footer-link:hover, .socialmedia .footer-link:active, .socialmedia .footer-link:focus {
   font-weight: bold;
   color: #77574E;
 }
 
-.col4 .copyright {
+.socialmedia p {
   font-size: 10px;
   font-style: italic;
+}
+
+.vineyard-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.vineyard-selector .thehome, .vineyard-selector .damsteep, .vineyard-selector .netherwood {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+  min-width: 33.33%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.vineyard-selector .thehome:hover, .vineyard-selector .damsteep:hover, .vineyard-selector .netherwood:hover {
+  opacity: 1;
+}
+
+.vineyard-selector .thehome {
+  background-image: url("../../img/TheHomeNav.jpg");
+  background-size: cover;
+}
+
+.vineyard-selector .damsteep {
+  background-image: url("../../img/DamsteepNav.jpg");
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 0 2px 0 2px;
+  background-size: cover;
+}
+
+.vineyard-selector .netherwood {
+  background-image: url("../../img/NetherwoodNav.jpg");
+  background-size: cover;
+}
+
+.vineyard-selector .vineyard-link {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 2.5px;
+  color: #77574E;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 250px;
 }
 
 .hero

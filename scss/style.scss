@@ -1,9 +1,17 @@
+// Variables
+@import './variables';
+
+// Mixins
+@import './abstracts/mixins';
+
 // Layout
 @import './layout/navbar';
 @import './layout/hero';
-@import './variables';
 @import './layout/bodycopy';
 @import './layout/footer';
+
+    // Vineyard
+    @import './layout/vineyards';
 
 // Transitions
 @import './transition/hero-transition';

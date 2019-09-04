@@ -1,17 +1,17 @@
-.bodycopy {
+.ourstory {
     box-sizing: border-box;
     display: flex;
     flex-wrap: row wrap;
     
-    .c2, .c3 {
+    .story-vineyards, .story-vineyards-image {
         min-height: 600px;
     }
 
-    .c4, .c5 {
+    .story-wines-image, .story-wines {
         min-height: 500px;
     }
 
-    .c6,.c7 {
+    .story-current,.story-current-image {
         min-height: 550px;
     } 
 }   
@@ -27,7 +27,7 @@
     color: #77574E;
 }
 
-.story {
+.content {
     display: flex;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -37,7 +37,7 @@
 
 
 //  Gap
-.c1.gap, .c8.gap {
+.gap-top, .gap-bottom {
     display: flex;
     background-color: #e5e6dda1;
     margin: 0;
@@ -47,24 +47,24 @@
 
 // Content
 
-.c2, .c5, .c6 {
+.story-vineyards, .story-wines, .story-current {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-left: 50px;
 }
 
-.c2 {
+.story-vineyards {
     padding-right: 100px;
     background-color: #ffffff;
 }
 
-.c5 {
+.story-wines {
     padding-left: 50px;
     padding-right: 100px;
 }
 
-.c6 {
+.story-current {
     padding-left: 50px;
     padding-right: 120px;
     background-color: #ffffff;
@@ -72,17 +72,17 @@
 
 // Images
 
-.c3 {
+.story-vineyards-image {
     background-image: url('../../img/Img1.jpg');
     background-size: cover;
 }
 
-.c4 {
+.story-wines-image {
     background-image: url('../../img/Img2.jpg');
     background-size: cover;
 }
 
-.c7 {
+.story-current-image {
     background-image: url('../../img/Img3.jpeg');
     background-size: cover;
 }
@@ -96,46 +96,46 @@
     letter-spacing: 2.5px;
     border-radius: 0;
     text-transform: uppercase;
-}
 
-.btn-outline:hover,
-.btn-outline:active,
-.btn-outline:focus,
-.btn-outline.active {
-  background:  #6B7245;
-  color: #ffffff;
-  border-color:  #6B7245;
-}
+        &:hover,
+        &:active,
+        &:focus,
+        &.active {
+        background:  #6B7245;
+        color: #ffffff;
+        border-color:  #6B7245;
+        }
+    }        
 
 @media screen and (max-width:770px){
 
 // Column drop
         
-    .c2 {
+    .story-vineyards {
         order: 1
     }
     
-    .c3 {
+    .story-vineyards-image {
         order: 2
     }
 
-    .c4 {
+    .story-wines-image {
         order: 4
     }
     
-    .c5 {
+    .story-wines {
         order: 3
     }
 
-    .c6 {
+    .story-current {
         order: 5
     }
     
-    .c7 {
+    .story-current-image {
         order: 6
     }
 
-    .c8 {
+    .gap-bottom {
         order: 7
     }
 }

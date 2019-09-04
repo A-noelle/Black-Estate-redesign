@@ -2,18 +2,18 @@
     color: #77574E;
     font-family: 'Lato', sans-serif;
     position: static;
-}
 
-.footer-row {
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    justify-content: center;
+    .footer-row {
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 // Footer Nav
 
-.col1 {
+.footer-nav {
 
     .footer-item {
         padding: 3px;
@@ -23,46 +23,48 @@
         font-size: 16px;
         color: #77574E;
         letter-spacing: 2.5px;
-    }
+        text-transform: uppercase;
 
-    .footer-nav-link:hover,
-    .footer-nav-link:active,
-    .footer-nav-link:focus {
-        font-weight: bold;
-        letter-spacing: 2.5px;
-        color: #77574E;
+        &:hover,
+        &:active,
+        &:focus {
+            font-weight: bold;
+            letter-spacing: 2.5px;
+            color: #77574E;
+        }
     }
 }
 
 // Visit Us
 
-.col2 {
+.visit-us {
 
     .visit-style {
         letter-spacing: 2.5px;
-    }
+        text-transform: uppercase;
 
-    .visit-us {
+    h6 {
         font-weight: bold;
-    }
+        }
 
-    .visit-us-content {
+    p {
         padding-top: 5px;
         line-height: 30px;
+        }
     }
 }
 
 // Form
 
-.col3 {
+.footerform {
 
-    .form-header {
+    h6 {
         font-weight: bold;
         color: #6B7245;
         letter-spacing: 2.5px;
     }
 
-    .form-content {
+    p {
         padding-top: 5px;
         padding-bottom: 5px;
     }
@@ -80,7 +82,6 @@
         padding-left: 4px;
         padding-top: 5px;
         justify-self: baseline;
-        border: #B95616;
         border-top-right-radius: 50%;
         border-bottom-right-radius: 50%;
     }
@@ -92,13 +93,13 @@
 
 // Socail Media
 
-.col4 {
+.socialmedia {
     display: flex;
     justify-items: center;
     flex-direction: column;
     padding-left: 20px;
 
-    .fab {
+    i {
         color: #6B7245;
         padding-right: 10px;
         padding-bottom: 10px;
@@ -119,7 +120,7 @@
         flex-direction: column;
     }
 
-    a.footer-link {
+    .footer-link {
         font-size: 10px;
         padding-bottom: 5px;
         color: #77574E;
@@ -131,7 +132,8 @@
             color: #77574E;
         }
     }
-    .copyright {
+
+    p {
         font-size: 10px;
         font-style: italic;
     }

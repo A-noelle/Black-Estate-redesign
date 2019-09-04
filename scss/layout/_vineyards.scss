@@ -1,0 +1,51 @@
+.vineyard-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap; 
+
+    .thehome, .damsteep, .netherwood {
+        box-sizing: border-box;
+        min-height: 100vh;
+        min-width: 33.33%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.7;
+        
+        &:hover {
+            opacity: 1;    
+        }
+    }
+
+    .thehome {
+        background-image: url('../../img/TheHomeNav.jpg');
+        background-size: cover;
+    }
+
+    .damsteep {
+        background-image: url('../../img/DamsteepNav.jpg');
+        border-color: #ffffff;
+        border-style: solid;
+        border-width: 0 2px 0 2px;
+        background-size: cover;
+    }
+
+    .netherwood {
+        background-image: url('../../img/NetherwoodNav.jpg');
+        background-size: cover;
+    }
+
+    .vineyard-link {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 50px;
+        letter-spacing: 2.5px;
+        color: #77574E;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 250px;
+    }
+}
